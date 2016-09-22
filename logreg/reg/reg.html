@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<script src="js/lib/jquery_1.7.min.js"></script>
+	<meta charset="UTF-8">
+	<title>注册页面</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="titlediv">上海市农业布局规划系统</div>
+	<div id="contentdiv">
+		<img id="contitimg" src="img/reg.png"/>
+		<div id="regcontentdiv">
+		<div><img class="msgtitle" src="img/usrname.png"/>&nbsp;<input id="usrnametext" type="text" class="inputtext">&nbsp;<span class="mustfield">*</span></div>
+		<div><img class="msgtitle" src="img/pass.png"/>&nbsp;<input id="passtext" type="password" class="inputtext">&nbsp;<span class="mustfield">*</span></div>
+		<div><img class="msgtitle" src="img/repass.png"/>&nbsp;<input id="repasstext" type="password" class="inputtext">&nbsp;<span class="mustfield">*</span></div>
+		<div><img class="msgtitle" src="img/relname.png"/>&nbsp;<input id="relnametext" type="text" class="inputtext">&nbsp;<span class="mustfield">*</span></div>
+		<div><img class="msgtitle" src="img/phone.png"/>&nbsp;<input id="phonetext" type="text" class="inputtext">&nbsp;<span class="mustfield">*</span></div>
+		<div><img class="msgtitle" src="img/email.png"/>&nbsp;<input id="emailtext" type="text" class="inputtext">&nbsp;<span class="mustfield">*</span></div>
+		<div><img class="msgtitle" src="img/unit.png"/>&nbsp;<select id="selectunit" class="inputtext"></select>&nbsp;<span class="mustfield">*</span></div>
+		<div id="commitdiv"><img id="commit" src="img/submit.png"  />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id="goback" src="img/back.png" /></div>
+        <span id="usrname">长度大于2位的英文字母</span>
+        <span id="pass">长度为3-16位的英文字母</span>
+        <span id="repass"></span>
+        <span id="relname"></span>
+        <span id="phone">固话8位或手机号11位</span>
+        <span id="email"></span>
+        <span id="unit"></span>
+		<span id="alertmsg">注：标注为<span class="mustfield">*</span>的字段为必填或必选字段！</span>
+	   </div>
+	   <div id="successdiv">
+	   	 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户<span id="myname"></span>：您好，您已成功注册为我们的新用户，请等待管理员授权！请<span id="backlogin">点击这里</span>进入登录界面或者</span>&nbsp;&nbsp;<img id="backreg" src="img/back.png">
+	   </div>
+	</div>	
+	<script src="js/lib/EventUtil.js"></script>
+	<script src="js/reg.js"></script>
+</body>
+</html>

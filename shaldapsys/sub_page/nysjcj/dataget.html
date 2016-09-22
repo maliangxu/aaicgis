@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>数据采集界面</title>
+    <link rel="stylesheet" type="text/css" href="../../jslib/publib/reset/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../jslib/publib/zebra_datapicker/css/default.css">
+    <link rel="stylesheet" href="../../jslib/publib/perfectscrollbar/perfect-scrollbar.min.css">
+    <script type="text/javascript" charset="utf-8" async defer>
+    var ifloginbyuser;
+    ifloginbyuser = sessionStorage.getItem("usrName");
+    if (ifloginbyuser == null) {
+        window.location.href = "../../../logreg/login";
+    }
+    </script>
+</head>
+
+<body onselectstart="return false" oncopy="return false;" oncut="return false;" oncontextmenu="return false;">
+    <div id="maindiv">
+        <div id='list-view'></div>
+        <div id="titleMenuDiv">
+            <div id="data-edit"></div>
+            <div id="toolDiv"></div>
+            <div id="changeImg"></div>
+            <div id="location-select"></div>
+        </div>
+        <div id="save-tip"></div>
+        <!--属性信息“修改”窗口-->
+        <div id="prop-fix-popup"></div>
+        <!--属性信息“展示”窗口-->
+        <div id="prop-show-popup"></div>
+        <div id="map"></div>
+    </div>
+    <div id="mask-layer"></div>
+    <script src="../../jslib/publib/jquery-1.9.1.min.js"></script>
+    <script src="../../jslib/publib/zebra_datapicker/javascript/zebra_datepicker.js"></script>
+    <script src="../../jslib/publib/perfectscrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../../jslib/publib/perfectscrollbar/jquery.mousewheel.js"></script>
+    <script src="../../jslib/publib/react/react.min.js"></script>
+    <script src="../../jslib/publib/react/react-dom.min.js"></script>
+    <script src="../../jslib/ecnulib.min.js"></script>
+    <script src="bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+body{background:#EBF3E0;}
+/*******标题样式**********/
+#titlediv{position: relative;text-align: center;width: 100%;margin-top: 50px;font-weight: bold;font-size: 30px;}
+#titleimg{width: 450px;}
+/********页面注册内容样式***********/
+#regcontentdiv{display: block;}
+#contentdiv{margin:0 auto;width: 700px;height: 320px;border: 5px solid #373A2F;position: relative;margin-top: 40px;border-top: 60px solid #373A2F;text-align: center;}
+#contitimg{position: absolute;left: 308px; top: -40px;width: 75px;}
+.msgtitle{margin-top: 6px;padding-bottom: 0px;vertical-align:middle;}
+.inputtext{width: 120px;margin-top: 6px;vertical-align:middle;}
+#selectunit{width: 124px;height: 22px;}
+#commitdiv{margin-top: 25px;}
+#commitdiv img {cursor: pointer;}
+.mustfield{color:#FF0000;}
+#alertmsg{position: absolute;left: 5px;bottom: 10px;font-size: 13px;font-weight: bold;}
+/***********提示信息**************/
+#usrname{position: absolute;left: 470px;top: 8px;font-size:13px;color: #000000; }
+#pass{position: absolute;left: 470px;top: 38px;font-size:13px;color: #000000;}
+#repass{position: absolute;left: 470px;top: 68px;font-size:13px;color: #FF0000;}
+#relname{position: absolute;left: 470px;top: 98px;font-size:13px;color: #FF0000;}
+#phone{position: absolute;left: 470px;top: 128px;font-size:13px;color: #000000;}
+#email{position: absolute;left: 470px;top: 158px;font-size:13px;color: #FF0000;}
+#unit{position: absolute;left: 470px;top: 190px;font-size:13px;color: #FF0000;}
+/************注册成功之后的提示信息**********/
+#successdiv{width: 405px;display: none; margin-top: 100px;margin-left: 150px; float: left;text-align: left;line-height: 40px;font-family: "Microsoft YaHei";}
+#myname{color: #2222FF;}
+#backlogin{text-decoration: underline;color: #2222FF;}
+#backlogin:hover{cursor: pointer;font-weight: bold;}
+#backreg{cursor: pointer;}

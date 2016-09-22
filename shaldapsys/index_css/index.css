@@ -1,0 +1,38 @@
+body,html{margin:0; padding:0;} 
+#maindiv {width:100%;height:100%;margin:0;}
+
+
+
+
+#titlediv{position:relative;width:100%;height: 50px;background: url(../index_img/menu_bg.png) repeat-x;border-bottom: 2px solid #FFFFFF;font-family: "Microsoft YaHei"}
+#lefttitlediv{position:absolute; left: 10px; height:50px;font-size: 22px;line-height: 50px;color:#fff;}
+#titleicon{width: 28px; position:absolute; left:0; top:11px;}
+#titletext{width: 371px;position:absolute; top:13px; left:37px;}
+
+#curPositionDiv{font-family: "Microsoft YaHei";color: #FFFFFF; font-size: 14px;float: right; margin-right: 30px;top: 18px;}
+#righttitlediv{width: 500px; height: 24px; font-family: "Microsoft YaHei";color: #FFFFFF; font-size: 14px;position:absolute; right: 25px;top: 18px;}
+#welUser {float: right;}
+#goBack {display: none; float: right; cursor: pointer;margin-left: 25px;}
+#logout{float: right; cursor: pointer; margin-left: 15px; }
+
+/* #righttitlediv input {position: absolute; top:2px}
+#righttitlediv img{position: relative; vertical-align: middle;width: 20px; height: 20px;}
+.backImg,.logImg {margin-right: 5px;margin-top: -3px;}
+.userImg{margin-right: 4px; margin-top: -5px;} */
+.locImg {position: relative; vertical-align: middle;width: 20px; height: 20px;margin-right: 4px; margin-top: -5px;}
+
+
+#contentdiv{position:relative;width: 100%;overflow: hidden;}
+#subpageframe{width: 100%;height: 100%;overflow: hidden;}
+
+
+
+#footerdiv {position:relative;width:100%;height: 30px;background: url(../index_img/menu_bg.png) repeat-x;border-top: 2px solid #FFFFFF;bottom: 0;}
+#textwarnlog{display: none; position: absolute;right: 10px;color: #FFFFFF;font-family: "Microsoft YaHei";font-size: 13px;}
+.copyright{color: #FFFFFF;font-family: "Microsoft YaHei";font-size: 13px;position: absolute;padding-top: 5px;}
+#footerleft{left: 10px;}
+#footerright{right: 20px;}
+#title-logo{
+	position: relative;
+	top:8px;
+}

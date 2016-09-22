@@ -1,0 +1,32 @@
+body{margin: 0px;padding: 0px;min-height: 520px;overflow: hidden;}
+#backimg{position: absolute;z-index: -10; width:100%;height:100%;bottom: 52px; margin:0; padding:0;}
+#logoNw{position: absolute;width: 20%;height: 5%; background: url(../img/logo_nw.png) no-repeat; background-size: contain; top: 7%;right: 3%;}
+#logoLine {position: absolute;width: 70%;height:1%; background: url(../img/logo_line.png) no-repeat; background-size:contain; top: 12%;right: 0}
+#leftImg {position: absolute;width: 35%;height:80%; background: url(../img/left_img.png) no-repeat; background-size:contain;top: 12%; left: 5%;}
+#loginTitle {position: absolute; width: 65%; height:10%; background: url(../img/title.png) no-repeat;background-size:contain;top: 20%; right: 5%;}
+#login {
+	position: absolute;width: 574px; height: 333px; top:35%;right: 14%;padding-top: 5%; background: url(../img/login_back.png) no-repeat;background-size:contain;
+	text-align: center; color: #fff; font-family: "SimHei","Microsoft Yahei",Arial;
+}
+@media (max-width: 1279px){
+ #login {width: 530px;}
+}
+#usrnameDiv,#usrPassDiv {position: relative;font-size: 1.25em;}
+#usrPassDiv {margin-top: 4%;}
+#login input{position: relative;width: 50%;height: 38px;margin-left: 20px;font-size: 0.875em;color: #202020;box-shadow: 1px 1px 1px #deccb8; border: none; border-radius: 5px;background-color: #fefefe;}
+#loginimg {
+	position: relative;width: 50%;height: 40px;left: 27%;top: 13%; margin-left: 18px; background-color: #deccb6;box-shadow: 1px 1px 2px #1e3419; color: #1c4423;cursor: pointer; font-size: 1.25em; font-family: "Microsoft Yahei";font-weight: bold;line-height: 42px; 
+}
+#loginimg:hover {opacity: .9;}
+#registerdiv {position: relative; top: 17%; left: 18%; font-size: 0.875em;}
+#registerid {color: #fca81a;cursor: pointer;}
+#registerid:hover {opacity: .9;}
+#btm_bg {
+	position: absolute;width: 100%;height: 50px;bottom: 0;font-size: 13px;font-family: "Microsoft Yahei";color: #fff;text-align: center;
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#126a37',endColorStr='#13582c',gradientType='0'); 
+	background: -moz-linear-gradient(top, #126a37, #13582c); 
+	background: -o-linear-gradient(top,#126a37, #13582c); 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#126a37), to(#13582c)); 
+}
+#footleft {position: relative;top: 4px;}
+#footright {position: relative;top: 6px;}

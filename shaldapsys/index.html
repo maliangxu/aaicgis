@@ -1,0 +1,84 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+  <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+  <META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT">
+	<!-- <meta HTTP-EQUIV="Pragma" CONTENT="cache"> -->
+	<title>上海市农业布局规划动态管理系统</title>
+	<link rel="stylesheet" href="index_css/index.css" type="text/css">
+    <script  type="text/javascript" charset="utf-8" async defer>
+       var ifloginbyuser;
+       ifloginbyuser=sessionStorage.getItem("usrName");
+       if (ifloginbyuser==null)
+         {
+          window.location.href="../logreg/login"; 
+         }
+    </script>
+</head>
+<body>
+	<div id="maindiv">
+		<!--标题栏-->
+		<div id="titlediv">
+			<div id="lefttitlediv">
+        <img id="title-logo" src="index_img/logo.png" width="80" height="30" />
+        安信农业保险管理系统
+			</div>
+      
+			<div id="righttitlediv">       
+				<span id="logout" title="注销" onclick="logoutSys();"><!-- <img src="index_img/ind_logout.png" class="logImg"> -->注销</span>
+        <span id="goBack" title="主菜单" onclick="back2menu();"><!-- <img src="index_img/ind_back.png" class="backImg"> -->主菜单</span>
+        <span id="welUser"><span>欢迎您：</span><span id="usrname"></span></span>
+        <div id="curPositionDiv"></div>
+			</div>
+		</div>
+		<!--主内容栏-->
+		<div id="contentdiv">
+			<iframe id="subpageframe" frameborder=0 src="sub_page/nysjcj/dataget.html"></iframe>
+		</div>
+		<div id="footerdiv">
+      <span id="footerleft" class="copyright">&copy;2016-2018 安信农业保险股份有限公司,版权所有 </span><span id="footerright" class="copyright">技术支持：华东师范大学地理科学学院&nbsp;&nbsp;&nbsp;&nbsp;联系电话：021-54341181</span>
+		</div>
+	</div>
+<script src="index_js/index.js"></script>
+<script src="index_js/jquery-1.7.min.js"></script>
+<script type="text/javascript" charset="utf-8" >
+	//计算中间容器高度
+	var thisheight=document.documentElement.clientHeight;
+	var thiswidth=document.documentElement.clientWidth;
+	//document.getElementById("contentdiv").style.width=thiswidth+"px";
+	document.getElementById("contentdiv").style.height=thisheight-84+"px";
+	document.getElementById("usrname").textContent=sessionStorage.getItem("realName");
+	  var resizeTimer=null;
+      window.onresize=debounce(function(){doResize();},500,false,alwaysResize);
+      function doResize() {
+        document.getElementById('subpageframe').contentWindow.resizeDocu();
+      }
+      function alwaysResize(){
+      	var thisheight=document.documentElement.clientHeight;
+        document.getElementById("contentdiv").style.height=thisheight-84+"px";
+      }
+
+    function debounce(func, threshold, execAsap,fun) {
+  //  var debounce  = function (func, threshold, execAsap) {
+        var timeout;
+        return function debounced () {
+            var obj = this, args = arguments;
+            function delayed () {
+                if (!execAsap)
+                    func.apply(obj, args);
+                timeout = null;
+            };
+            if (timeout)
+                clearTimeout(timeout);
+            else if (execAsap){
+                func.apply(obj, args);
+            }
+            timeout = setTimeout(delayed, threshold || 100);
+            fun();
+        };
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" manifest="login_m.manifest">
+<head>
+  <link href="css/User_Login.css" type=text/css rel=stylesheet>
+  <meta charset="UTF-8">
+  <title>用户登录</title>
+</head>
+<body >
+  <div id="mainDiv">
+
+     <div id="contentDiv">
+      <span id="titleTxt">上&nbsp;海&nbsp;市&nbsp;农&nbsp;业&nbsp;布&nbsp;局&nbsp;规&nbsp;划&nbsp;系&nbsp;统</span>
+       <div id="contenttop"></div>
+       <div id="maincontent">
+          <div id="login">
+            <div id="loginTitle"><span id="loginTitleTxt">个人用户登录</span></div>
+            <div id="usrnameDiv">账号<input  id="account" type="text"></div>
+            <div id="usrPassDiv">密码<input  id="password" type="password"></div>
+            <div id="usrPlat">平台<select id="platformselect" name="platform"> 
+              <option value="default" selected> -- 系&nbsp;统&nbsp;默&nbsp;认 --</option> 
+              <option value="pc"> -- Web&nbsp;版 --</option> 
+              <option value="mobile"> -- Pad&nbsp;版 --</option> </select> 
+            </div>
+            <div id="registerdiv">还没有账号？<span id="registerid" >立即注册！</span></div>
+            <div id="loginimg">登&nbsp;&nbsp;录</div>
+          </div>
+          <div id="centerLogin"></div>
+          <div id="txtimg"></div>
+       </div>
+       <div id="btm_bg"></div>
+     </div>
+  </div>
+  <script src="js/lib/jquery-1.7.min.js"></script>
+  <script src="js/lib/EventUtil.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>
